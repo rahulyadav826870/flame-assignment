@@ -1,0 +1,54 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.app {
+  background-color: gray;
+  height: 100vh;
+  width: 100vw;
+}
+:root {
+  --background:  linear-gradient(to right, #8B5CF6, #EC4899);
+  --foreground: linear-gradient(to right, #06B6D4, #93C5FD);
+  --divider: #dcdcdc;
+  --homePage:   linear-gradient(to right, #06B6D4, #93C5FD);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: linear-gradient(to right, #8B5CF6, #EC4899);
+    --foreground:linear-gradient(to right, #06B6D4, #93C5FD);
+    --divider: #333;
+  }
+}
+
+body {
+  overflow: hidden;
+  line-height: 1.5;
+}
+
+button,
+input,
+textarea,
+[contenteditable="true"] {
+  box-sizing: border-box;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 0.0625rem solid var(--divider);
+  font-family: inherit;
+  font-size: 1rem;
+  background: var(--background);
+  color: var(--foreground);
+}
+
+textarea {
+  resize: none;
+}
+
+button {
+  cursor: pointer;
+  background: transparent;
+  color: white;
+ 
+}
